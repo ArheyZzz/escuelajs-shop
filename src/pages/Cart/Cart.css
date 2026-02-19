@@ -1,0 +1,184 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.page-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.btn {
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    box-shadow: var(--shadow-soft);
+    cursor: pointer;
+    font-weight: 800;
+    transition: transform .12s ease, box-shadow .15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.primary {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+    color: white;
+    border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+}
+
+.danger {
+    background: color-mix(in srgb, #ff4d4f 16%, var(--card));
+    border-color: color-mix(in srgb, #ff4d4f 28%, var(--border));
+    color: color-mix(in srgb, #b42318 70%, var(--text));
+}
+
+.cart-form {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 16px;
+}
+
+.cart-list {
+    display: grid;
+    gap: 12px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 78px 1fr auto;
+    gap: 12px;
+    align-items: center;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+    padding: 12px;
+}
+
+.cart-img {
+    width: 78px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+}
+
+.cart-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cart-name {
+    font-weight: 900;
+}
+
+.cart-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 6px 8px;
+    background: var(--panel);
+}
+
+.icon-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.qty-num {
+    min-width: 18px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.order-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+    padding: 14px;
+    height: fit-content;
+}
+
+.order-title {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.inputs {
+    display: grid;
+    gap: 10px;
+}
+
+.inputs input,
+.inputs textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--text);
+    outline: none;
+}
+
+.inputs textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.inputs input:focus,
+.inputs textarea:focus {
+    border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+.order-buttons {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+@media (max-width: 920px) {
+    .cart-form {
+        grid-template-columns: 1fr;
+    }
+}

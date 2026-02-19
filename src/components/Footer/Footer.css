@@ -1,0 +1,8 @@
+.footer {
+    margin-top: auto;
+    padding: 14px 18px;
+    border-top: 1px solid var(--border);
+    background: linear-gradient(135deg, var(--panel) 0%, var(--card) 100%);
+    text-align: center;
+    color: var(--muted);
+}

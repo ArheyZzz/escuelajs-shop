@@ -1,0 +1,19 @@
+.theme-btn {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: var(--shadow-soft);
+    transition: transform .12s ease, box-shadow .15s ease;
+}
+
+.theme-btn:hover {
+    transform: translateY(-1px);
+}
+
+.theme-btn:active {
+    transform: translateY(0);
+}

@@ -1,0 +1,182 @@
+[
+	{
+		"id": 1,
+		"title": "Wireless Headphones",
+		"category": "Electronics",
+		"price": 120,
+		"rating": 4.5,
+		"stock": 12,
+		"thumbnail": "/assets/products/headphones.jpg",
+		"description": "Noise-cancelling wireless headphones with long battery life."
+	},
+	{
+		"id": 2,
+		"title": "Smart Watch",
+		"category": "Electronics",
+		"price": 199,
+		"rating": 4.7,
+		"stock": 8,
+		"thumbnail": "/assets/products/smartwatch.jpg",
+		"description": "Fitness tracking smartwatch with heart-rate and sleep monitor."
+	},
+	{
+		"id": 3,
+		"title": "Bluetooth Speaker",
+		"category": "Electronics",
+		"price": 89,
+		"rating": 4.3,
+		"stock": 20,
+		"thumbnail": "/assets/products/speaker.jpg",
+		"description": "Portable Bluetooth speaker with deep bass and water resistance."
+	},
+	{
+		"id": 4,
+		"title": "Men's Denim Jacket",
+		"category": "Fashion",
+		"price": 75,
+		"rating": 4.1,
+		"stock": 10,
+		"thumbnail": "/assets/products/denim-jacket.jpg",
+		"description": "Classic men's denim jacket made of 100% cotton."
+	},
+	{
+		"id": 5,
+		"title": "Women's Leather Handbag",
+		"category": "Fashion",
+		"price": 145,
+		"rating": 4.8,
+		"stock": 5,
+		"thumbnail": "/assets/products/handbag.jpg",
+		"description": "Elegant leather handbag with detachable strap."
+	},
+	{
+		"id": 6,
+		"title": "Running Shoes",
+		"category": "Fashion",
+		"price": 99,
+		"rating": 4.6,
+		"stock": 14,
+		"thumbnail": "/assets/products/running-shoes.jpg",
+		"description": "Lightweight running shoes with breathable mesh upper."
+	},
+	{
+		"id": 7,
+		"title": "Ceramic Coffee Mug",
+		"category": "Home",
+		"price": 15,
+		"rating": 4.2,
+		"stock": 30,
+		"thumbnail": "/assets/products/mug.jpg",
+		"description": "Large ceramic coffee mug with heat-resistant coating."
+	},
+	{
+		"id": 8,
+		"title": "Decorative Throw Pillow",
+		"category": "Home",
+		"price": 25,
+		"rating": 4.0,
+		"stock": 18,
+		"thumbnail": "/assets/products/pillow.jpg",
+		"description": "Soft decorative pillow with removable cover."
+	},
+	{
+		"id": 9,
+		"title": "Table Lamp",
+		"category": "Home",
+		"price": 49,
+		"rating": 4.4,
+		"stock": 7,
+		"thumbnail": "/assets/products/lamp.jpg",
+		"description": "Stylish bedside table lamp with warm light."
+	},
+	{
+		"id": 10,
+		"title": "Bestselling Novel",
+		"category": "Books",
+		"price": 18,
+		"rating": 4.9,
+		"stock": 25,
+		"thumbnail": "/assets/products/book.jpg",
+		"description": "Gripping modern novel that became an international bestseller."
+	},
+	{
+		"id": 11,
+		"title": "Cookbook: Quick Meals",
+		"category": "Books",
+		"price": 22,
+		"rating": 4.3,
+		"stock": 13,
+		"thumbnail": "/assets/products/cookbook.jpg",
+		"description": "Over 100 easy and healthy recipes for busy people."
+	},
+	{
+		"id": 12,
+		"title": "Fantasy Saga Volume 1",
+		"category": "Books",
+		"price": 27,
+		"rating": 4.8,
+		"stock": 9,
+		"thumbnail": "/assets/products/fantasy-book.jpg",
+		"description": "The first book in an epic fantasy adventure series."
+	},
+	{
+		"id": 13,
+		"title": "Face Cream",
+		"category": "Beauty",
+		"price": 35,
+		"rating": 4.5,
+		"stock": 40,
+		"thumbnail": "/assets/products/face-cream.jpg",
+		"description": "Hydrating face cream with vitamin E and natural oils."
+	},
+	{
+		"id": 14,
+		"title": "Perfume for Women",
+		"category": "Beauty",
+		"price": 89,
+		"rating": 4.9,
+		"stock": 6,
+		"thumbnail": "/assets/products/perfume.jpg",
+		"description": "Floral fragrance with long-lasting aroma."
+	},
+	{
+		"id": 15,
+		"title": "Beard Trimmer",
+		"category": "Beauty",
+		"price": 59,
+		"rating": 4.4,
+		"stock": 10,
+		"thumbnail": "/assets/products/trimmer.jpg",
+		"description": "Rechargeable beard trimmer with precision blades."
+	},
+	{
+		"id": 16,
+		"title": "Yoga Mat",
+		"category": "Sports",
+		"price": 45,
+		"rating": 4.6,
+		"stock": 17,
+		"thumbnail": "/assets/products/yoga-mat.jpg",
+		"description": "Non-slip yoga mat with carrying strap."
+	},
+	{
+		"id": 17,
+		"title": "Dumbbell Set",
+		"category": "Sports",
+		"price": 79,
+		"rating": 4.7,
+		"stock": 8,
+		"thumbnail": "/assets/products/dumbbells.jpg",
+		"description": "Adjustable dumbbell set for strength training."
+	},
+	{
+		"id": 18,
+		"title": "Cycling Helmet",
+		"category": "Sports",
+		"price": 65,
+		"rating": 4.3,
+		"stock": 11,
+		"thumbnail": "/assets/products/helmet.jpg",
+		"description": "Lightweight and durable helmet for cycling safety."
+	}
+]

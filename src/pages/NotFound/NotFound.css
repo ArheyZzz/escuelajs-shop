@@ -1,0 +1,26 @@
+.not-found {
+    display: grid;
+    place-items: center;
+    padding: 30px 0;
+}
+
+.nf-card {
+    width: 100%;
+    max-width: 520px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 18px;
+    text-align: center;
+}
+
+.nf-title {
+    margin: 0 0 8px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.muted {
+    color: var(--muted);
+}
