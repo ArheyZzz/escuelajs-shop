@@ -1,11 +1,19 @@
 import './Home.css';
-import { useEffect, useReducer } from 'react';
+import { useEffect, useMemo, useReducer } from 'react';
+import { Link } from 'react-router-dom';
 import {
 	catalogReducer,
 	initialCatalogState,
 } from '../../reducers/catalogReducer';
 import { fetchProducts } from '../../api/products';
-import { Link } from 'react-router-dom';
+
+const ALLOWED_CATEGORIES = new Set([
+	'Clothes',
+	'Electronics',
+	'Furniture',
+	'Shoes',
+	'Miscellaneous',
+]);
 
 export default function Home() {
 	const [catalog, dispatch] = useReducer(catalogReducer, initialCatalogState);
@@ -36,24 +44,25 @@ export default function Home() {
 	const isError = catalog.status === 'error';
 	const isReady = catalog.status === 'success';
 
-	const categories = Array.from(
-		new Set(catalog.data.map(item => item.category.name)),
-	).filter(
-		c =>
-			c === 'Clothes' ||
-			c === 'Electronics' ||
-			c === 'Furniture' ||
-			c === 'Shoes' ||
-			c === 'Miscellaneous',
+	const base = import.meta.env.BASE_URL;
+
+	const images: Record<string, string> = useMemo(
+		() => ({
+			Clothes: `${base}images/Clothes.png`,
+			Electronics: `${base}images/Electronics.png`,
+			Furniture: `${base}images/Furniture.png`,
+			Shoes: `${base}images/Shoes.png`,
+			Miscellaneous: `${base}images/Miscellaneous.png`,
+		}),
+		[base],
 	);
 
-	const images: Record<string, string> = {
-		Clothes: '/images/Clothes.png',
-		Electronics: '/images/Electronics.png',
-		Furniture: '/images/Furniture.png',
-		Shoes: '/images/Shoes.png',
-		Miscellaneous: '/images/Miscellaneous.png',
-	};
+	const categories = useMemo(() => {
+		if (!isReady) return [];
+		return Array.from(
+			new Set(catalog.data.map(item => item.category.name)),
+		).filter(c => ALLOWED_CATEGORIES.has(c));
+	}, [catalog.data, isReady]);
 
 	return (
 		<section className='home'>
@@ -73,9 +82,10 @@ export default function Home() {
 							aria-label={category}
 						>
 							<img
-								src={images[category]}
+								src={images[category] ?? `${base}vite.svg`}
 								alt={category}
 								className='category-img'
+								loading='lazy'
 							/>
 							<span className='category-name'>{category}</span>
 						</Link>
